@@ -639,6 +639,20 @@ class Tank_auth
 					$this->ci->config->item('login_attempt_expire', 'tank_auth'));
 		}
 	}
+	
+	public function is_admin(){
+		//$admins = ['admin', 'admin2']; // usernames
+		
+		
+		if($this->is_logged_in()){
+			$logged_in_username = $this->get_username();
+			$user = $this->ci->users->get_user_by_username($logged_in_username);
+			//die(print_r($user));
+			if($user->is_admin == 1)
+				return TRUE;
+			else return FALSE;
+			}
+	}
 }
 
 /* End of file Tank_auth.php */

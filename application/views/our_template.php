@@ -34,7 +34,7 @@ a:hover
 <!-- Beginning header -->
     <div>
         <a href='<?php echo site_url('main/users')?>'>Users</a> | 
-        <a href='<?php echo site_url('main/groups')?>'>Groups</a> |
+        <a href='<?php echo site_url('main/groups2')?>'>Groups</a> |
            <a href='<?php echo site_url('main/user_groups')?>'>User Groups</a> |
            <a href='<?php echo site_url('main/type_contacts')?>'>Contacts type</a> |
             <a href='<?php echo site_url('main/contacts')?>'>User Contacts</a> |
