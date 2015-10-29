@@ -26,10 +26,15 @@ class ecard extends CI_Controller {
 					'data' => $output 
 			);
 			$this->load->view ( 'middle.php', $out );
-			$data['images'] = $this->images->get_images();
-			
-			//load view and pass the data
-			$this->load->view('images_view', $data);
+		   $this->load->helper('directory'); //load directory helper
+           $dir = "images/"; // Your Path to folder
+           $map = directory_map($dir); /* This function reads the directory path specified in the first parameter and builds an array representation of it and all its contained files. */
+
+foreach ($map as $k)
+{?>
+     <img src="<?php echo base_url($dir)."/".$k;?>" alt="">
+   
+<?php }
 			
 		}
 	}

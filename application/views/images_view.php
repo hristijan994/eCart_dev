@@ -12,8 +12,8 @@
         <div align="center">
             <ul>
             <?php if(!empty($images)): foreach($images as $img) : ?>
-               <li><img src="<?php echo $img['image']; ?>" alt=""></li>
-            <?php endforeach; endif; ?>
+               <li><img src="<?php echo $img['image']; ?>" ></li>
+            <?php endforeach;  endif; ?>
             </ul>
         </div>
     </div>
