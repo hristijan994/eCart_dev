@@ -15,11 +15,11 @@
 
 <div align="center">
 <br/><br/>
-<div class="container">
-        <div class="row">
-            <div class="col-md-4 col-md-offset-4">
-                <div class="login-panel panel panel-default">
-                    <div class="panel-heading">
+<div align="center">
+        <div align="center">
+            <div align="center">
+                <div align="center">
+                    <div align="center">
                         						<p>Bergstraße 19</p>
 <p>87647 Unterthingau</p>
 <p>Deutschland</p>
